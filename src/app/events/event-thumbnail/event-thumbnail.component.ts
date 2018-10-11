@@ -10,6 +10,7 @@ export class EventThumbnailComponent implements OnInit {
 
   @Input() event: any;
   // @Output() eventClick = new EventEmitter();
+  // someETProperty: any = 'some value'; // template property won't be required.
 
   constructor() { }
 
@@ -18,6 +19,10 @@ export class EventThumbnailComponent implements OnInit {
 
   // handleClickMe() {
   //   this.eventClick.emit(this.event.nameAddress1);
+  // }
+
+  // logFoo() { // template method won't be required.
+  //   console.log('foo');
   // }
 
 }
