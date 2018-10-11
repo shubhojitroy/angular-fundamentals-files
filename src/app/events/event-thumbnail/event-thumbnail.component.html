@@ -1,4 +1,4 @@
-<div>
+<div class="well hoverwell thumbnail">
   <span>
     {{ event.nameAddress1 }}
   </span><br>
@@ -9,13 +9,16 @@
     {{ event.nameAddress3 }}
   </span><br>
   <span>
-    {{ event.nameAddress4 }}
+    ${{ event.nameAddress4 }}
   </span><br>
   <span>
     {{ event.imageUrl }}
   </span><br>
   <span>
-    {{ event.nameAddress6 }}
+    {{ event.nameAddress6.address }}
+  </span>
+  <span class="pad-left">
+    {{ event.nameAddress6.city }}
   </span>
 </div>
 <!-- <div>
