@@ -1,27 +1,32 @@
-<div class="well hoverwell thumbnail">
-  <span>
-    {{ event.nameAddress1 }}
-  </span><br>
-  <span>
-    {{ event.nameAddress2 }}
-  </span><br>
-  <span>
-    {{ event.nameAddress3 }}
-  </span><br>
-  <span>
-    ${{ event.nameAddress4 }}
-  </span><br>
-  <span>
-    {{ event.imageUrl }}
-  </span><br>
-  <span>
-    {{ event.nameAddress6.address }}
-  </span>
-  <span class="pad-left">
-    {{ event.nameAddress6.city }}
-  </span>
+<div class="card carbonad-card" >
+  <div class="card-body">
+    <div class="well hoverwell thumbnail">
+      <h4>
+        {{ event?.nameAddress1 }}
+      </h4><br>
+      <span>
+        {{ event?.nameAddress2 }}
+      </span><br>
+      <span>
+        {{ event?.nameAddress3 }}
+      </span><br>
+      <span>
+        ${{ event?.nameAddress4 }}
+      </span><br>
+      <span>
+        {{ event?.imageUrl }}
+      </span><br>
+      <span>
+        {{ event?.nameAddress6?.address }}
+      </span>
+      <span class="pad-left">
+        {{ event?.nameAddress6?.city }}
+      </span>
+    </div>
+    <!-- <div>
+      <button type="button" class="btn btn-primary" (click)="handleClickMe()">Click Me!</button>
+    </div> -->
+  </div>
 </div>
-<!-- <div>
-  <button type="button" class="btn btn-primary" (click)="handleClickMe()">Click Me!</button>
-</div> -->
+
 

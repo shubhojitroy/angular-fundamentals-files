@@ -1,8 +1,8 @@
 <div class="card">
   <div class="card-body">
-    <h3>
+    <h2>
       Upcoming Angular Events
-    </h3>
+    </h2>
     <hr>
     <div class="card-text">
       <!-- <ngf-event-thumbnail (eventClick)="handleEventClicked($event)"[event]="event1"></ngf-event-thumbnail> -->
@@ -10,9 +10,9 @@
       <!-- <h3>{{ thumbnail.someETProperty }}</h3>
       <button class="btn btn-primary" (click)="thumbnail.logFoo()">Log me some foo</button> -->
       <div class="well">
-        <span>Hello World</span>
+        <h3>Hello World</h3>
       </div>
-      <ngf-event-thumbnail [event]="event1"></ngf-event-thumbnail>
+      <ngf-event-thumbnail *ngFor="let event of events" [event]="event" ></ngf-event-thumbnail><!---->
     </div>
 
   </div>
