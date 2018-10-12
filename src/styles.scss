@@ -3,8 +3,13 @@
 @import '../node_modules/bootstrap/scss/bootstrap';
 @import './assets/styles/base/variables';
 @import './assets/styles/base/global';
+@import './assets/styles/base/utility';
 @import './assets/styles/modules/body';
+@import './assets/styles/modules/card';
+@import './assets/styles/modules/nav';
 @import './assets/styles/modules/load';
 @import './assets/styles/modules/btn';
+
+@import './assets/styles/modules/footer';
 
 
