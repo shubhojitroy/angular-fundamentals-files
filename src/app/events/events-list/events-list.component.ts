@@ -7,6 +7,7 @@ import { EventService } from '../shared/event.service';
   styleUrls: ['./events-list.component.scss']
 })
 export class EventsListComponent implements OnInit {
+  cardText = 'Events List';
   events: any[];
   constructor(private eventService: EventService) {
   }
